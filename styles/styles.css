@@ -98,12 +98,38 @@ li {
 	/* border: solid 1px black; */
 	background-color: lightgrey;
 	padding: 2%;
-	font-size: 1.5em;
+	font-size: 1.8em;
+	margin: 1% 0 2% 0;
 }
 
+.imgContent {
+	display: flex;
+	flex-direction: row;
+}
+
+.figureContent {
+	padding: 2%;
+}
+
+.figureContent>img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+
+
 /* Banner Image --------------------------------------------------*/
+#adBanner {
+	display: flex;
+	justify-content: center;
+}
+
 
 /* Main Content 2 ------------------------------------------------*/
+
+
+
 
 /* Footer-------------------------------------------------------- */
 
