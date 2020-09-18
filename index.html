@@ -8,11 +8,9 @@
 		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="sassStyles/sassStyles.css">
 	</head>
-
-
-
-
 	<body>
+
+
 
 		<!-- header with logo/name, banner, navbar -->
 		<header>
@@ -97,50 +95,48 @@
 
 		<!-- div 2x2 images with figure, img and figcaption -->
 		<div id="secondContent">
-			<figure>
+			<div class="divSecContent">
 				<img src="img/polar.png" alt="Polar Watches">
-				<figcaption>Polar's watches will watch you when you sleep</figcaption>
-			</figure>
+				<!-- <p>Polar's watches will watch you when you sleep</p> -->
 
-			<figure>
 				<img src="img/nasa.png" alt="ISS">
-				<figcaption>Popular holiday destination for this Christmas</figcaption>
-			</figure>
-
-			<figure>
+				<!-- <p>Popular holiday destination for this Christmas</p> -->
+		
 				<img src="img/smart.png" alt="Sleepwatch">
-				<figcaption>Polar's watches will watch you when you sleep</figcaption>
-			</figure>
+				<!-- <p>Polar's watches will watch you when you sleep</p> -->
 
-			<figure>
 				<img src="img/snowden.jpg" alt="Datastream">
-				<figcaption>Why Javascript is the perfect technology for you</figcaption>
-			</figure>
+				<!-- <p>Why Javascript is the perfect technology for you</p> -->
+			</div>
+
+			<div id="adBannerCF">
+				<img src="img/banner-4.png" alt="sideAd">
+			</div>
+
 		</div>
 
-		<div id="sideBanner">
-			<img src="img/banner-4.png" alt="sideAd">
 
-		</div>
 
 
 		<!-- Footer with Navbar, Logo and Authorship -->
 		<footer>
 			<!-- NavBar in Footer -->
-			<nav>
-				<ul>
-					<li> <a href=""> Home </a> </li>
-					<li> <a href=""> Tech </a> </li>
-					<li> <a href=""> Culture </a> </li>
-					<li> <a href=""> Video </a> </li>
+			<nav class="navBar footerNavBar">
+				<ul class="navList">
+					<li> <a class="linkItems" href=""> Home </a> </li>
+					<li> <a class="linkItems" href=""> Tech </a> </li>
+					<li> <a class="linkItems" href=""> Culture </a> </li>
+					<li> <a class="linkItems" href=""> Video </a> </li>
 				</ul>
 			</nav>
 
 			<!-- Logo in Footer -->
-			<img src="img/logo-newspaper-cf.png" alt="Logo Newspaper">
+			<div id="footerDiv">
+				<img id="footerImg" src="img/logo-newspaper-cf.png" alt="Logo Newspaper">
+			</div>
 
 			<!-- Author -->
-			<p> Christian Bodenwinkler - CodeFactory 2020 </p>
+			<p id="author"> Christian Bodenwinkler - CodeFactory 2020 </p>
 
 		</footer>
 

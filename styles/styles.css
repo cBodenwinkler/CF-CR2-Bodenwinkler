@@ -105,16 +105,16 @@ li {
 .imgContent {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 .figureContent {
-	padding: 2%;
+	width: 30%;
 }
 
 .figureContent>img{
 	width: 100%;
-	padding: 0;
-	margin: 0;
 }
 
 
@@ -123,15 +123,86 @@ li {
 #adBanner {
 	display: flex;
 	justify-content: center;
+	margin: 3%;
+}
+
+#adImage {
+	width: 80%;
 }
 
 
 /* Main Content 2 ------------------------------------------------*/
+#secondContent {
+	/* border: 1px solid black; */
+
+	margin: 0 5% 5% 5%;
+	display: flex;
+	height: auto;
+	width: 90%;
+	
+
+}
+
+.divSecContent {
+	display: flex;
+	flex-flow: row wrap;
+	align-self: center;
+	justify-content: center;
+	height: auto;
+	width: 90%;
+	
+}
+
+.divSecContent>img{
+	width: 35%;
+	padding: 5%;
+
+}
+
+#adBannerCF>img {
+	height: 100%;
+
+}
+
+
+
+
 
 
 
 
 /* Footer-------------------------------------------------------- */
+footer {
+	background-color: #0E0D0D;
+}
+
+.footerNavBar {
+	padding: 2%;
+}
+
+
+
+#footerDiv {
+	display: flex;
+	justify-content: flex-end;
+
+	padding-right: 3%;
+}
+
+#footerImg {
+	width: 20%;
+}
+
+#author {
+	font-size: 1.6em;
+	color: white;
+	text-align: center;
+	padding: 2% 0 5% 0;
+}
+
+
+
+
 
 
 
