@@ -1,0 +1,124 @@
+Allgemeines -------------------------------------------------- */
+html {
+	box-sizing: border-box;
+	font-family: Arial,Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+}
+/* Delete ------------------------------------------------------- */
+
+footer {
+	/* border: solid 1px black; */
+}
+
+#mainContent {
+	/* border: solid 1px black; */
+}
+
+#secondContent {
+	/* border: solid 1px black; */
+}
+
+#sideBanner {
+	/* border: solid 1px black; */
+}
+
+/* Header ------------------------------------------------------- */
+header {
+	background-color: #5B191A;
+
+}
+
+#logoBanner {
+	border: solid 1px black;
+
+}
+
+
+#imgHeader {
+	display: flex;
+	justify-content: space-around;
+	padding: 5% 2% 5% 2%;
+	margin: 2%;
+}
+
+#imgHeader > img {
+	width: 40%;
+}
+
+.navBar {
+	display: flex;
+	background-color: #0E0D0D;
+	font-size: 2em;
+	padding-left: 2%;
+}
+
+.navList {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.linkItems {
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	padding: 0 7% 0 7%;
+	list-style-type: none;
+}
+
+#date {
+	background-color: white;
+	display: flex;
+	justify-content: flex-end;
+	padding: 1% 2% 1% 1%;
+}
+
+
+
+/* Main Content 1 ----------------------------------------------- */
+#mainContent {
+	width: 90%;
+	margin: 0 5% 0 5%;
+
+}
+
+.mainHeading {
+	/* border: solid 1px black; */
+	background-color: lightgrey;
+	padding: 2%;
+	font-size: 1.5em;
+}
+
+/* Banner Image --------------------------------------------------*/
+
+/* Main Content 2 ------------------------------------------------*/
+
+/* Footer-------------------------------------------------------- */
+
+
+
+
+
+/* SMARTPHONE -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+
+/* Header ------------------------------------------------------- */
+
+/* Main Content 1 ----------------------------------------------- */
+
+/* Banner Image --------------------------------------------------*/
+
+/* Main Content 2 ------------------------------------------------*/
+
+/* Footer--------------------------------------------------------
