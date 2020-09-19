@@ -15,24 +15,12 @@ html {
 body {
 	font-family: arial;
 }
-/* Delete ------------------------------------------------------- */
+/* Desktop -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media screen 
+	and (min-width: 481px) {
 
-footer {
-	/* border: solid 1px black; */
-}
 
-#mainContent {
-	/* border: solid 1px black; */
-}
-
-#secondContent {
-	/* border: solid 1px black; */
-}
-
-#sideBanner {
-	/* border: solid 1px black; */
-}
-
+	
 /* Header ------------------------------------------------------- */
 header {
 	background-color: #5B191A;
@@ -40,7 +28,7 @@ header {
 }
 
 #logoBanner {
-	border: solid 1px black;
+	border: solid black 1px;
 
 }
 
@@ -48,19 +36,20 @@ header {
 #imgHeader {
 	display: flex;
 	justify-content: space-around;
-	padding: 5% 2% 5% 2%;
-	margin: 2%;
+	padding: 5% 10% 5% 2%;
+	margin: 2% 5% 2% 5%;
 }
 
-#imgHeader > img {
-	width: 40%;
+#imgHeader img {
+	width: 150%;
 }
 
 .navBar {
 	display: flex;
 	background-color: #0E0D0D;
-	font-size: 2em;
+	font-size: 3em;
 	padding-left: 2%;
+
 }
 
 .navList {
@@ -74,7 +63,7 @@ header {
 }
 
 li {
-	padding: 0 7% 0 7%;
+	padding: 0 5% 0 5%;
 	list-style-type: none;
 }
 
@@ -90,8 +79,7 @@ li {
 /* Main Content 1 ----------------------------------------------- */
 #mainContent {
 	width: 90%;
-	margin: 0 5% 0 5%;
-
+	margin: 0 5% 10% 5%;
 }
 
 .mainHeading {
@@ -106,30 +94,45 @@ li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
+	padding: 0 0 10% 0;
 }
 
 .figureContent {
 	width: 30%;
 }
 
-.figureContent>img{
+.figureContent img{
 	width: 100%;
+	position: relative;
+	object-fit: contain;
 }
 
+.figureContent figcaption {
+	position: absolute;
+	width: 27%;
+	text-align: center;
+	font-size: 1.5em;
+	
+	color: white;
+	background-color: #0E0D0D;
+	padding: 2% 0 2% 0;
+	margin: 0 0 0 0;
+}
 
+#smartphoneBanner {
+	display: none;
+}
 
 /* Banner Image --------------------------------------------------*/
 #adBanner {
 	display: flex;
 	justify-content: center;
-	margin: 3%;
+	margin: 0 0 3% 0;
 }
 
 #adImage {
 	width: 80%;
 }
-
 
 /* Main Content 2 ------------------------------------------------*/
 #secondContent {
@@ -137,39 +140,60 @@ li {
 
 	margin: 0 5% 5% 5%;
 	display: flex;
-	height: auto;
-	width: 90%;
-	
+	/* flex-direction: row; */
 
+	height: auto;
+	width: 85%;
 }
 
 .divSecContent {
-	display: flex;
-	flex-flow: row wrap;
-	align-self: center;
-	justify-content: center;
+	/* border: solid black 1px; */
 	height: auto;
 	width: 90%;
+
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap;
+	align-self: center;
+	justify-content: space-around;
+	text-align: center;
+
+	padding: 1% 1% 10% 1%; 
+	
 	
 }
 
-.divSecContent>img{
-	width: 35%;
-	padding: 5%;
+.divSecContent a {
+
+	width: 40%;
+	display: flex;
+	flex-direction: column-reverse;
+	align-content: center;
+	margin-bottom: 5%;
 
 }
 
-#adBannerCF>img {
+.divSecContent img{
+	width: 100%;
+}
+
+.divSecContent p {
+	position: absolute;
+	width: 30.7%;
+	text-align: center;
+	
+	font-size: 1.5em;
+	color: white;
+	background-color: #0E0D0D;
+	padding: 2% 0 2% 0;
+}
+
+#adBannerCF img {
 	height: 100%;
+	max-width: 100%;
+	margin: 0 0 0 0;
 
 }
-
-
-
-
-
-
-
 
 /* Footer-------------------------------------------------------- */
 footer {
@@ -200,7 +224,7 @@ footer {
 	padding: 2% 0 5% 0;
 }
 
-
+}
 
 
 
@@ -209,13 +233,120 @@ footer {
 
 
 /* SMARTPHONE -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+@media screen  
+	and (max-device-width: 480px) {
+
+
+
+.smartPhoneDelete {
+	display: none;
+}
 
 /* Header ------------------------------------------------------- */
+#imgHeader {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.navBar {
+}
+
+.navList {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navList > li {
+	font-size: 0.9em;
+}
+
 
 /* Main Content 1 ----------------------------------------------- */
+#smartphoneBanner {
+	display: inherit;
+}
+
+.mainHeading {
+	font-size: 3em;
+}
+
+#mainContent {
+	/* border: solid black 1px; */
+	width: 99%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.imgContent {
+	/* border: solid black 1px; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+	justify-content: ;
+
+	margin: 5%;
+}
+
+.figureContent {
+	/* border: solid black 1px; */
+	width: 400px;
+	height: 300px;
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.figureContent img {
+	/* border: solid black 1px; */
+	padding: 0 0 4% 0;
+
+}
+
+.figureContent figcaption {
+	display: none;
+}
+
+#smartphoneBanner img {
+	width: 400px;
+	height: 300px;
+}
+
+
 
 /* Banner Image --------------------------------------------------*/
+#adBanner {
+	display: none;
+}
+
 
 /* Main Content 2 ------------------------------------------------*/
+#adBannerCF {
+	display: none;
+}
 
-/* Footer--------------------------------------------------------
+#secondContent {
+	padding: 0 5% 0 5%;
+	margin: 0 5% 0 5%;
+}
+
+
+/* Footer--------------------------------------------------------*/
+#footerDiv {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	height: 100px;
+	width: auto;
+}
+
+
+
+
+
+
+}
